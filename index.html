@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassCharm</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">ClassCharm</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="navmenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#" class="nav-link">Notes</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#" class="nav-link">Important Message</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="nav-profile">
+                <a href="https://linktr.ee/Developer.Priyank">
+                    <img src="Profile.jpg" alt="Profile Picture" class="profile-img">
+                </a>
+            </div> -->
+            <div class="nav-menu-button">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+               <div class="featured-text">
+                 <div class="featured-text-card">
+                     <span>Developer.Priyank</span>
+                 </div>
+                 <div class="featured-name">
+                     <p>Hey👋 I'm your <span class="typedText"></span></p>
+                 </div>
+                 <div class="featured-text-info">
+                     <p>
+                        Classacharm is a web platform for friends to share notes and important classroom messages. If you miss a class or lose a WhatsApp message, Classacharm can help. 
+                     </p>
+                 </div>
+                 <!-- <div class="featured-text-btn">
+                     <button class="btn blue-btn" id="nextButtonNotes">Notes</button>
+                     <button class="btn" id="nextButtonAnswer">Answer <i class="uil uil-file-alt"></i></button>
+                 </div> -->
+                 <div class="social_icons">
+                     <div class="icon" id="nextButtoninsta"><i class="uil uil-instagram"></i></div>
+                     <div class="icon" id="nextButtonlink"><i class="uil uil-linkedin-alt"></i></div>
+                     <div class="icon" id="nextButtongithub"><i class="uil uil-github-alt"></i></div>
+                 </div>
+               </div>
+               <div class="featured-image">
+                 <div class="image">
+                     <img src="imag.png" alt="avatar">
+                 </div>
+               </div>
+               <div class="scroll-icon-box">
+                 <a href="#about" class="scroll-btn">
+                     <i class="uil uil-mouse-alt"></i>
+                     <p>Scroll Down</p>
+                 </a>
+               </div>
+            </section>
+
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>List of All Sem Material</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>📚Studysource</h3>
+                            <p>Welcome to Studysource, a repository of handwritten notes and placement materials for engineering courses. Find semester notes, PPTs, and resources for faculty and students.
+                            </p>
+                            <div class="about-btn">
+                                <button class="btn" id="nextButtonconnect">Click Me🔗</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Notes</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>OS</span>
+                                <span>Computer Network</span>
+                                <span>COMA</span>
+                                <span>Python(Full-Stack)</span>
+                                <span>PSNM</span>
+                                <span>Other</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Answer</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>Coming Soon 🚀</span>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="content">
+                        <div class="projects">
+                            <h2>Notes for 5th Semester</h2>
+                            <div class="project-grid" id="project-grid">
+                                <!-- Note cards will go here -->
+                                <div class="project-card" onclick="openPDF('note1.pdf')">
+                                    <h3>DAA</h3>
+                                    <p>Class Ppt, Refrence Book</p>
+                                    <div class="progress-bar" style="width: 60%;"></div>
+                                </div>
+                                <div class="project-card" onclick="openPDF('note2.pdf')">
+                                    <h3>SE</h3>
+                                    <p>Class Ppt, Refrence Book</p>
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                                <div class="project-card" onclick="openPDF('note2.pdf')">
+                                    <h3>EP</h3>
+                                    <p>Class Ppt, Refrence Book</p>
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                                <div class="project-card" onclick="openPDF('note2.pdf')">
+                                    <h3>DADV</h3>
+                                    <p>Class Ppt, Refrence Book</p>
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                                <!-- Add more notes as needed -->
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                  </div>
+            </section>
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+</html>
